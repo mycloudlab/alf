@@ -7,7 +7,7 @@ EOF
 
 echo $AUTH > /mosquitto/config/mosquitto_passwd
 mosquitto_passwd -U /mosquitto/config/mosquitto_passwd
-chown -R mosquitto:mosquitto /mosquitto
+
 
 set -e
 exec "$@"
